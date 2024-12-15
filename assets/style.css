@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --titulo-principal: #ffffff;
+    --texto-secundario: #c0c0c0;
+    --link-principal: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter';
+
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--titulo-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__link {
+    background-color: var(--link-principal);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--titulo-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.link__secundario {
+    background-color: transparent;
+    border: 2px solid var(--titulo-principal)
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--texto-secundario);
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--titulo-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--texto-secundario);
+}
+
+.secundario__link {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--titulo-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--titulo-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.rodape__link a{
+    text-decoration: none;
+    color: var(--titulo-principal);
+    margin-left: 1em;
+}
+
+.rodape__link a:hover {
+    color: var(--link-principal);
+}
+
+.rodape__link a:active {
+    color: purple;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--texto-secundario);
+    font-size: 14px;
+}
